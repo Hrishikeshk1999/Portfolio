@@ -1,0 +1,446 @@
+/* This snippet is often used as a CSS reset to create a consistent base for styling a webpage. */
+/* By "consistent base," I mean that the CSS snippet helps to create a uniform starting point for styling a webpage. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: relative;  /*By setting the header to position: relative, you can adjust its position using the top, right, bottom, and left properties without affecting other elements on the page. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 100; */
+}
+
+.logo {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px blue,
+        0 0 50px blue;
+    transform: scale(1.2);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+
+.navbar a:hover {
+    color: rgb(229, 255, 0);
+    border-bottom: 3px solid blue;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px blue;
+    color: white;
+}
+
+/* Home section */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241 241 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 67px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 28px;
+    background-color: #FFA62F;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: #FF6C22;
+    border: 2px solid black;
+}
+
+.img-box img {
+    border-radius: 5%;
+    width: 550px;
+}
+
+/* About section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14% 8%;
+    gap: 10em;
+    background-color: black;
+}
+
+.about-img img {
+    position: relative;
+    width: 500px;
+    box-shadow: 0 0 25px #FF0000,
+        0 0 100px #FF0000;
+    border-radius: 50%;
+}
+
+.about-content h2 {
+    text-align: left;
+    color: white;
+    font-size: 42px;
+}
+
+.about-content h3 {
+    font-size: 62px;
+    color: #FF6C22;
+}
+
+.about-content p {
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 40px;
+}
+
+/* skill section */
+
+.skills {
+    margin: auto;
+    width: 90%;
+    padding: 60px 0;
+}
+
+.skills h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.left {
+    width: 50%;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+.left h1 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.left p {
+    font-size: 20px;
+    margin: 15px 0;
+    word-spacing: 2px;
+}
+
+.right h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.right {
+    flex: 1;
+    margin-left: 30px;
+    /*flex: 1; is a shorthand property for flex-grow, flex-shrink, and flex-basis.*/
+}
+
+.right .line {
+    margin-bottom: 15px;
+}
+
+.right .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .info span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.right .bars {
+    background-color: lightgray;
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.right .bars::before {         /*A CSS pseudo-element is used to style specified parts of an element.*/
+    content: '';
+    position: absolute;        /*Positions the ::before pseudo-element absolutely relative to the .bars element.*/
+    height: 100%;
+    background-color: orangered;
+}
+
+.right .html::before {
+    width: 90%;
+}
+
+.right .css::before {
+    width: 60%;
+}
+
+.right .javascript::before {
+    width: 30%;
+}
+
+.right .sql::before {
+    width: 60%;
+}
+
+.right .photoshop::before {
+    width: 90%;
+}
+
+/* logos */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    margin-top: 2px;
+    overflow: hidden;
+    padding: 100px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 8s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 70px;
+    margin: 60px;
+}
+
+/* Project */
+
+.projects {
+    margin: auto;
+    padding: 60px;
+    background-color: black;
+}
+
+.projects h2 {
+    margin-bottom: 120px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.projects-container .projects-box {
+    flex: 1;
+    max-height: 700px;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid white;
+    transition: .5s ease;
+    margin-bottom: 100px;
+}
+
+.projects-container .projects-box:hover {
+    border-color: #FF6C22;
+    transform: scale(1.02);
+}
+
+.projects-box {
+    font-size: 20px;
+}
+
+.projects-box img {
+    height: 350px;
+    width: 350px;
+}
+
+.projects-box h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.projects-box p {
+    margin: 10px 10px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+}
+
+.btn {
+    padding: 5px;
+    background-color: #FFA62F;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #FF6C22;
+    border: 2px solid black;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 20px 2px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialicons a i{
+    font-size: 25px;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialicons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footernav{
+    margin: 15px 0;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 15px; 
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footernav ul li a:hover{
+    opacity: 1;
+}
+
+.footer-bottom{
+    background-color: black;
+    padding-bottom: 5px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer-bottom p{
+    color: white;
+}
